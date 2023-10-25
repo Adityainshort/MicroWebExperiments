@@ -1,5 +1,5 @@
 # MicroWebExperiments
-collections of my little web experiments
+Collections of my little Web Experiments
 
 
 # My Small Projects Showcase
