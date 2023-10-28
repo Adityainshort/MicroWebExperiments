@@ -13,6 +13,10 @@ Welcome to my GitHub repository where I showcase a collection of small coding pr
   - Technologies Used: HTML, CSS
   - Screenshots: [https://ibb.co/RyXtRkj]
 
+- **Project 2: UI of versatile Navbar with Multi-Themed support**
+  - Description: This HTML and CSS code defines a webpage with a styled navigation bar, offering color theme flexibility. It includes buttons for "Home," "About," and "Contact," with a search button, and can be customized by changing the color themes in the :root section.
+  - Technologies Used: HTML, CSS
+  - Screenshots: -- 
 
 
 ## How to Use
