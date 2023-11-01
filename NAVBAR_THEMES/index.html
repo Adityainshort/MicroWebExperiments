@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>designing navbar</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Roboto:wght@500&display=swap');
+
+    * {
+        color: aliceblue;
+        font-weight: 900;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 25px;
+    }
+
+    body {
+        background-color: var(--ultralight);
+    }
+
+    .navbar {
+        display: flex;
+        width: 90%;
+        height: 100px;
+        margin: auto;
+        background-color: var(--light);
+        border-radius: 50px;
+    }
+
+    .search {
+        width: 60%;
+        height: 100px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-evenly;
+        width: 40%;
+        height: 100px;
+    }
+
+    .home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 20%;
+        height: 60%;
+        background-color: var(--dark);
+        border-radius: 30px;
+    }
+
+    .searchbutton {
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 80%;
+        height: 60%;
+        background-color: var(--dark);
+    }
+
+    :root {
+        /* global variables */
+        /* USE COMMMENT AND UNCOMMENT TO APPLY THE THEME  */
+
+        /* aqua */  /*  THEME -- >  1 */
+
+        --light: #48acac;
+        --ultralight: #84d5ea;
+        --dark: rgb(29 94 98);
+
+
+        /* green1 --> */  /*  THEME -- >  2 */
+
+        --light: #47a33c;
+        --ultralight: #79a774;
+        --dark: rgb(49 117 52);
+
+        /*black -->*/  /*  THEME -- >  3 */
+
+        --light: #707c7b;
+        --ultralight: #5c6466;
+        --dark: rgb(34 38 38);
+
+
+        /*chocolaty -->*/  /*  THEME -- >  4 */
+
+        --light: #624343;
+        --ultralight: #756060;
+        --dark: rgb(65 42 40);
+
+
+
+
+    }
+</style>
+
+<body>
+    <div>
+        <nav class="navbar ">
+            <div class="buttons">
+                <div class="home">Home</div>
+                <div class="home">About</div>
+                <div class="home">Contact</div>
+            </div>
+            <div class="search">
+                <div class="searchbutton">Aditya Raj Singh </div>
+            </div>
+        </nav>
+    </div>
+
+</body>
+
+</html>
