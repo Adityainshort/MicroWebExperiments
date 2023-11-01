@@ -10,10 +10,12 @@
     @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Roboto:wght@500&display=swap');
 
     * {
+        margin: 0;
+        padding: 0;
         color: aliceblue;
         font-weight: 900;
         font-family: 'Baloo 2', sans-serif;
-        font-size: 25px;
+        font-size: 15px;
     }
 
     body {
@@ -22,16 +24,23 @@
 
     .navbar {
         display: flex;
-        width: 90%;
-        height: 100px;
+        width: 100%;
+        height: 80px;
         margin: auto;
         background-color: var(--light);
-        border-radius: 50px;
+        border-radius: 30px;
+    }
+    input{
+        width: 80%;
+        background-color: var(--dark);
+        border-radius: 20px;
+        text-align: center;
+        
     }
 
     .search {
         width: 60%;
-        height: 100px;
+        /* height: 100px; */
         display: flex;
         justify-content: space-evenly;
     }
@@ -40,7 +49,7 @@
         display: flex;
         justify-content: space-evenly;
         width: 40%;
-        height: 100px;
+        /* height: 100px; */
     }
 
     .home {
@@ -50,20 +59,21 @@
         margin: auto;
         width: 20%;
         height: 60%;
-        background-color: var(--dark);
-        border-radius: 30px;
+        /* background-color: var(--dark); */
+        /* border-radius: 30px; */
     }
 
     .searchbutton {
-        border-radius: 30px;
+        /* border-radius: 30px; */
         display: flex;
         align-items: center;
         justify-content: center;
         margin: auto;
         width: 80%;
         height: 60%;
-        background-color: var(--dark);
+        /* background-color: var(--dark); */
     }
+
 
     :root {
         /* global variables */
@@ -89,7 +99,7 @@
         --dark: rgb(34 38 38);
 
 
-        /*chocolaty -->*/  /*  THEME -- >  4 */
+        /*brown  -->*/  /*  THEME -- >  4 */
 
         --light: #624343;
         --ultralight: #756060;
@@ -110,7 +120,9 @@
                 <div class="home">Contact</div>
             </div>
             <div class="search">
-                <div class="searchbutton">Aditya Raj Singh </div>
+                
+                <div class="searchbutton">
+                    <input type="text" placeholder=" Search "> </div>
             </div>
         </nav>
     </div>
