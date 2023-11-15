@@ -16,9 +16,8 @@ Welcome to my GitHub repository where I showcase a collection of small coding pr
 - **Project 2: UI of versatile Navbar with Multi-Themed support**
   - Description: This HTML and CSS code defines a webpage with a styled navigation bar, offering color theme flexibility. It includes buttons for "Home," "About," and "Contact," with a search button, and can be customized by changing the color themes in the :root section.
   - Technologies Used: HTML, CSS
-    - Screenshots: -- 
-
-  - **Project 3: Bouncing ball animation using CSS Animations**
+  - Screenshots: -- 
+- **Project 3: Bouncing ball animation using CSS Animations**
     - Simple HTML/CSS code for a bouncing animation with a ball that moves horizontally and vertically, creating a playful and visually appealing effect.
     - Technologies Used: CSS 
     - Screenshots: -- 
