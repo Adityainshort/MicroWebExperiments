@@ -3,53 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bouncing animation </title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }   
-        .main{
-            height: 70vh;   
-            width: 82vw;
-            padding: 6px;
-            background-color: rgb(255, 255, 255);
-            display: flex;
-            flex-wrap: wrap-reverse;
-            border-bottom: 5px solid black;
-        }
-        .ball{
-            height: 40px;
-            width: 40px;
-            border-radius: 50%;
-            border: 5px solid black;
-            animation: transx 10s linear 1.5s forwards; 
-            
-        }
-        .bounce{
-            height: 10%;
-            background-color: rgb(255, 255, 255);
-            animation: transy 0.5s cubic-bezier(0, 0, 0.58  , 1) 1.5s 20 alternate   ; 
-        }
-    
-        @keyframes transx {
-            to{
-                transform: translateX(1000px) ;
-            }
-        }
-        @keyframes transy {
-            to{
-                transform: translateY(-200px) ;
-            }
-        }
-    </style>
+    <title>Bouncing Ball</title>
 </head>
+<style>
+    .ball{
+        height: 31px;
+        width: 31px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 50%;
+        border: 3px solid black;
+        background-color: rgb(171, 211, 211);
+        animation:  transy .2s ease-out  infinite alternate , transx 2.5s linear infinite alternate;
+    }
+    .con{
+        position: relative;
+        height: 80vh;
+        /* width: 80vw; */
+        width: 99%;
+        border-bottom: 4px solid black;
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    @keyframes transx {
+        from{
+            left: 0;
+        }
+        to{
+            left:98%;
+        }
+    }
+    @keyframes transy {
+        from{
+            bottom: 0;
+        }
+        to{
+            bottom: 20%;
+        }
+    }
+</style>
 <body>
-    <div class="main">
-        <div class="bounce">
-            <div class="ball ">
-            </div>
-        </div>
-    </div>
+    <div class="con "><div class="ball"></div></div>
 </body>
 </html>
