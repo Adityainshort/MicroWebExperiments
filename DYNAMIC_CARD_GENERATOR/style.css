@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Luckiest+Guy&family=Poppins:wght@300&family=Roboto:wght@500&display=swap');
+
+ *{
+    padding:  10px;
+ }
+ body{
+    background-color: #000000ec;
+ }
+ .container{
+    width: 70%;
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.left{
+    height: 88px;
+    width: 188px;     
+    min-width: 120px;
+    padding: 10px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.title{
+    font-family: Poppins;
+    font-size: medium;
+    font-weight: 600;
+    position: relative;
+    bottom: 20px;
+}
+.info{
+    font-family: Poppins;
+    font-size: 11px;
+    color: #919191;
+    font-weight: 600;
+    position: relative;
+    bottom: 28px;
+}
+.time{
+    height:8px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative;
+    left:145px;
+    top: 65px; */
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: #000000ac;
+    color: white;
+    border-radius: 5px;
+}
+
+.right{
+    height: 80%;
+    width: 75%;     
+    color: white;
+    font-size: larger;
+}
+.card{
+    color: white;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    min-width: 300px;
+    height: 110px;
+    background-color: rgb(32, 32, 32);
+ }
