@@ -21,6 +21,10 @@ Welcome to my GitHub repository where I showcase a collection of small coding pr
     - Simple HTML/CSS code for a bouncing animation with a ball that moves horizontally and vertically, creating a playful and visually appealing effect.
     - Technologies Used: CSS 
     - Screenshots: -- 
+- **Project 4: Dynamic YouTube Card Builder **
+    - Developed a dynamic YouTube video card generator through DOM manipulation, generating visually appealing cards solely with a function call, without the need for predefined HTML elements.
+    - Technologies Used: CSS , HTML , JS
+    - Screenshots: -- 
 
 
 ## How to Use
