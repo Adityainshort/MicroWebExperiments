@@ -9,7 +9,7 @@ let currtracksrc = "http://127.0.0.1:3000/songs/Ami%20Je%20Tomar%20-%20Arjit%20S
 
 
 async function getsongs() {
-    let a = await fetch("http://127.0.0.1:3000/songs")
+    let a = await fetch("/songs")
     let promise = await a.text();
     // console.log(promise)
 
