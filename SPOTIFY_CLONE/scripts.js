@@ -17,7 +17,7 @@ var cuurentaudiotrack = new Audio();
 
 async function getsongs(folder) {
     currFolder = folder
-    let a = await fetch(`songs/${folder}`)
+    let a = await fetch(`./songs/${folder}`)
     let promise = await a.text();
     // console.log(promise)
 
@@ -42,14 +42,14 @@ async function main(axxxa) {
     let songs = document.querySelector(".songs")
     for (let song of a) {
         // console.log(song)
-        song = song.split(`songs/${currFolder}/`)[1];
+        song = song.split(`/songs/${currFolder}/`)[1];
         song = song.split(".mp3")[0];
         song = song.replace(/%20/g, " ");
 
         let [songname, artistName] = song.split(/\s+-\s+/);
         console.log(songname, artistName);
 
-        let fullSongPath = `songs/${currFolder}/` + songname + " - " + artistName + ".mp3";
+        let fullSongPath = `/songs/${currFolder}/` + songname + " - " + artistName + ".mp3";
         songstracksrc.push(fullSongPath);
 
         songs.innerHTML += `<div class="card">
@@ -78,7 +78,7 @@ async function main(axxxa) {
 
             var songName = songNameElement.textContent.trim();
             var artistName = artistNameElement.textContent.trim();
-            currtracksrc = `songs/${currFolder}/` + songName + " - " + artistName + ".mp3";
+            currtracksrc = `/songs/${currFolder}/` + songName + " - " + artistName + ".mp3";
             // console.log(currtracksrc)
             document.querySelector('.songinfoname').innerHTML = songName;
             playsongs(currtracksrc);
@@ -214,7 +214,7 @@ document.querySelector('.closebutton').addEventListener("click",()=>{
 
 function changsongname(src) {
     let song = currtracksrc
-    song = song.split(`songs/${currFolder}/`)[1];
+    song = song.split(`/songs/${currFolder}/`)[1];
     song = song.split(".mp3")[0];
     song = song.replace(/%20/g, " ");
     document.querySelector('.songinfoname').innerHTML = song.split("-")[0];
