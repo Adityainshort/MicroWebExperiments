@@ -24,6 +24,10 @@ Welcome to my GitHub repository where I showcase a collection of small coding pr
 - **Project 4: Dynamic YouTube Card Builder**
     - Developed a dynamic YouTube video card generator through DOM manipulation, generating visually appealing cards solely with a function call, without the need for predefined HTML elements.
     - Technologies Used: CSS , HTML , JS
+    - Screenshots: --
+- **Project 5: Change Flags**
+    - This is the project where I practiced working with an API to retrieve information about flags. The project allows me to obtain details and data related to flags through the implemented API functionality .
+    - Technologies Used: CSS , HTML , JS
     - Screenshots: -- 
 
 
